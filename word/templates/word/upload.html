@@ -1,0 +1,14 @@
+{% extends 'word/main.html'%}
+{%block upload%}
+    <form action="{% url 'upload_DB' %}" method="GET">
+        <div>
+            <label for="word">word</label>
+            <input type="text" name = "word" />
+        </div>
+        <div>
+          <label for="mean">mean:</label>
+          <input type="text" name = "mean" />
+      </div>
+        <button type="submit">submit</button>
+    </form>
+{% endblock %}

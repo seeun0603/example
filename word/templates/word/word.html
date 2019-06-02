@@ -1,0 +1,7 @@
+{% extends 'word/main.html'%}
+{%block word%}
+    {%for i in dic%}
+        word : {{i.word}}, mean : {{i.mean}}
+        <br>
+    {% endfor %}
+{% endblock %}

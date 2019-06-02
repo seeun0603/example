@@ -1,0 +1,11 @@
+{% extends 'word/main.html'%}
+{%block test%}
+<form action="{% url 'check' %}" method="GET">
+        <div>
+          <label for="word">{{word.word}}</label>
+          <input type="text" name = "sol" />
+      </div>
+    <input type ="hidden" value="{{pk}}" name ="pk">
+    <button type="submit">submit</button>
+    </form>
+{% endblock %}
